@@ -26,6 +26,10 @@ mycursor.execute("SELECT name FROM timesheet")
 myresult = mycursor.fetchall()
 ab = ', '.join([' '.join(sub) for sub in myresult]).split(', ') #spliting the elements in list
 print(ab)
+# for y in myresult:
+#     print(y)
+#     for x in y:
+#         print(x)
 for x in ab:
     if x == 'hari':
         print(x)
