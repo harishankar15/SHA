@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Add Product</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+  <form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table width="384" height="369" border="0">
+      <tr>
+        <td width="36">&nbsp;</td>
+        <td width="117">&nbsp;</td>
+        <td width="171">&nbsp;</td>
+        <td width="32">&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td colspan="2"><div align="center">
+          <label>Product Add</label>
+        </div></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>HSN Code:</label></td>
+        <td>
+          <input type="text" name="hsnCode" minlength="8" maxlength="8">
+        </form></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>Product Name:</label></td>
+        <td>
+          <input type="text" name="productname">
+        </form></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><label>Product Price:</label></td>
+        <td>
+          <input type="text" name="productprice">
+        </form></td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>
+          <button type="submit">submit</button>
+          <button type="submit">Cancel</button>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
